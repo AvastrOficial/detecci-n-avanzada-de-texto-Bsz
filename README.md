@@ -1,7 +1,7 @@
 # Deteccion Avanzada De Texto Bsz
 
 > Sistema web que permite detectar si un texto fue generado por una inteligencia artificial, con una precisión simulada del **93%**. Permite analizar hasta **4096 caracteres** de forma gratuita.
-
+> Api Utilizado : ```html https://zerogpt.net/es/api-integration```
 ---
 
 ## 📂 Estructura HTML (Interfaz de usuario)
@@ -32,8 +32,7 @@
 ---
 
 ## ⚙️ Lógica JavaScript (Funcionamiento)
-Configuración
-javascript
+
 ```html
 const API_URL = 'https://api.example.com/detect';
 ```
@@ -44,10 +43,11 @@ const API_URL = 'https://api.example.com/detect';
 > Obtiene el texto desde el textarea.
 > Si el campo está vacío, muestra una alerta.
 > Muestra el mensaje 
-```html "Analizando..." 
+```html
+ "Analizando..." 
 ```
 > en la sección de resultados.
-Llama a 
+
 ```html
 fakeApiResponse()
 ```
